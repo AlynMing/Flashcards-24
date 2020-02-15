@@ -38,6 +38,7 @@ class ViewController: UIViewController {
         } else {
             incorrectLabel.isHidden = false
             correctLabel.isHidden = true
+            questionLabel.isHidden = false
         }
     }
     
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
         } else {
             incorrectLabel.isHidden = false
             correctLabel.isHidden = true
+            questionLabel.isHidden = false
         }
     }
     
@@ -60,6 +62,7 @@ class ViewController: UIViewController {
         } else {
             incorrectLabel.isHidden = false
             correctLabel.isHidden = true
+            questionLabel.isHidden = false
         }
     }
     
