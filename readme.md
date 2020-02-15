@@ -8,7 +8,7 @@
 Simple flashcard; tap question, answer appears.
 
 ### App Walk-though
-<img src="file:///Users/petershelley/Desktop/Codepath/Flashcards/Flashcard.gif" width=200><br>
+<img src="http://g.recordit.co/q5tukSsFaf.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Xcode
