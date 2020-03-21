@@ -3,7 +3,7 @@
 ## Lab 3
 
 ### App Description
-`TODO://` Add app description
+User can add custom flashcards and revisit them later.
 
 ### App Walk-though
 <img src="http://g.recordit.co/Ez0JaEzHcx.gif" width=200><br>
