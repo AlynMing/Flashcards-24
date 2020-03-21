@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -44,29 +44,28 @@
                                     <outletCollection property="gestureRecognizers" destination="mZR-aQ-Myb" appends="YES" id="cX2-Uv-5WK"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3D-AF-Cuy">
-                                <rect key="frame" x="174" y="708" width="66" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3D-AF-Cuy">
+                                <rect key="frame" x="175" y="700" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <state key="normal" title="+"/>
+                                <state key="normal" image="addButton"/>
                                 <connections>
                                     <segue destination="vaU-fk-ER5" kind="presentation" id="eFg-Sm-6fg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8N-Ze-WAC">
-                                <rect key="frame" x="20" y="708" width="56" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8N-Ze-WAC">
+                                <rect key="frame" x="16" y="700" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <state key="normal" title="Prev"/>
+                                <state key="normal" image="arrowLeft"/>
+                                <state key="disabled" image="arrowLeftDisabled"/>
                                 <connections>
                                     <action selector="didTapOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p5n-3r-tXu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hca-Xp-fXr">
-                                <rect key="frame" x="335" y="708" width="59" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hca-Xp-fXr">
+                                <rect key="frame" x="333" y="700" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <state key="normal" title="Next"/>
+                                <state key="normal" image="arrowRight"/>
+                                <state key="disabled" image="arrowRightDisabled"/>
                                 <connections>
                                     <action selector="didTapOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5O-Ea-Vct"/>
                                 </connections>
@@ -79,6 +78,7 @@
                     <navigationItem key="navigationItem" id="GdT-Xi-eSd"/>
                     <connections>
                         <outlet property="answerLabel" destination="5QU-44-wZM" id="wZ0-6N-XW3"/>
+                        <outlet property="card" destination="OcH-GP-Jcf" id="uTb-AV-LXq"/>
                         <outlet property="nextButton" destination="hca-Xp-fXr" id="PiE-H0-yAd"/>
                         <outlet property="prevButton" destination="V8N-Ze-WAC" id="Yf8-bU-xgQ"/>
                         <outlet property="questionLabel" destination="aeY-y8-tFE" id="Kp9-hT-JMi"/>
@@ -159,4 +159,11 @@
             <point key="canvasLocation" x="3323.1884057971015" y="174.77678571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="addButton" width="64" height="64"/>
+        <image name="arrowLeft" width="64" height="64"/>
+        <image name="arrowLeftDisabled" width="64" height="64"/>
+        <image name="arrowRight" width="64" height="64"/>
+        <image name="arrowRightDisabled" width="64" height="64"/>
+    </resources>
 </document>
