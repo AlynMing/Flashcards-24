@@ -26,8 +26,8 @@ class CreationViewController: UIViewController {
     @IBAction func didTapOnDone(_ sender: Any) {
         let qText = questionText.text
         let aText = answerText.text
-        flashcardController.updateFlashcard(question: qText!,
-                                            answer: aText!)
+        flashcardController.updateFlashcard(q: qText!,
+                                            a: aText!)
         dismiss(animated: true)
     }
     
