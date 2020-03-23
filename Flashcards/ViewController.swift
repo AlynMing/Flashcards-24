@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     @IBOutlet var opt2: UIButton!
     @IBOutlet var opt3: UIButton!
     @IBOutlet var deleteButton: UIButton! = nil
+    var correctButton: UIButton!
     
     var flashcardToBeDeleted: Flashcard!
     
@@ -85,6 +86,35 @@ class ViewController: UIViewController {
         })
     }
     
+    
+    @IBAction func didTapOpt1(_ sender: Any) {
+        if opt1==correctButton{
+            flipFlashcard()
+        } else {
+            opt1.isHidden=true
+            questionLabel.isHidden=false
+        }
+    }
+    
+    @IBAction func didTapOpt2(_ sender: Any) {
+        if opt2==correctButton{
+            flipFlashcard()
+        } else {
+            opt2.isHidden=true
+            questionLabel.isHidden=false
+        }
+    }
+    
+    @IBAction func didTapOpt3(_ sender: Any) {
+        if opt3==correctButton{
+            flipFlashcard()
+        } else {
+            opt3.isHidden=true
+            questionLabel.isHidden=false
+        }
+    }
+    
+    
     func updateFlashcard(q: String, a: String, i1: String, i2: String, isExisting: Bool) {
         let flashcardV = Flashcard(question: q, answer: a, incorrect1: i1, incorrect2: i2)
         if isExisting{
@@ -93,8 +123,6 @@ class ViewController: UIViewController {
             flashcards.append(flashcardV)
             currentIndex = flashcards.count-1
         }
-        
-        
         updatePrevNextButtons()
         updateLabels()
         saveAllFlashcardsToDisk()
@@ -170,11 +198,20 @@ class ViewController: UIViewController {
     }
     
     func updateLabels(){
+        opt1.isHidden=false
+        opt2.isHidden=false
+        opt3.isHidden=false
         answerLabel.text = flashcards[currentIndex].answer
         questionLabel.text = flashcards[currentIndex].question
-        opt1.setTitle(flashcards[currentIndex].answer, for: .normal)
-        opt2.setTitle(flashcards[currentIndex].incorrect1, for: .normal)
-        opt3.setTitle(flashcards[currentIndex].incorrect2, for: .normal)
+        let currentFlashcard = flashcards[currentIndex]
+        let buttons = [opt1, opt2, opt3].shuffled()
+        let answers = [currentFlashcard.answer, currentFlashcard.incorrect2, currentFlashcard.incorrect1].shuffled()
+        for (button, answer) in zip(buttons, answers){
+            button?.setTitle(answer, for: .normal)
+            if answer == currentFlashcard.answer {
+                correctButton=button
+            }
+        }
         self.questionLabel.isHidden=false
     }
     

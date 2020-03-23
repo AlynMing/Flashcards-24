@@ -93,6 +93,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.40771701929999998" green="0.74433219429999997" blue="0.94904750589999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapOpt2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adV-ql-lGK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCx-Mm-uty">
                                 <rect key="frame" x="20" y="613" width="374" height="80"/>
@@ -101,6 +104,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.40771701929999998" green="0.74433219429999997" blue="0.94904750589999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapOpt3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r1g-X3-xBm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyJ-s3-nnh">
                                 <rect key="frame" x="20" y="437" width="374" height="80"/>
@@ -109,6 +115,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.40771701929999998" green="0.74433219429999997" blue="0.94904750589999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapOpt1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ncY-uJ-HIM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
