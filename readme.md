@@ -1,18 +1,19 @@
-📝 `NOTE` Paste this template at the top of your existing `README.md` file from the last lab.
-
-## Lab 3
-
 ### App Description
-User can add custom flashcards and revisit them later.
+User can make flashcard sets withs smooth transitions
 
 ### App Walk-though
-<img src="http://g.recordit.co/Ez0JaEzHcx.gif" width=200><br>
+`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
+
+<img src="http://g.recordit.co/dsLnGxetE2.gif" width=200><br>
 
 ## Required
-- [x] User can browse through multiple flashcards
-- [x] User can re-open the app and see previously created flashcards
+- [x] User should see the app icon 
+- [x] User should see a splash screen
+- [x] User should see an flip animation when revealing the answer
+- [x] User should see a slide animation when going to the next flashcard
+- [x] User should see a slide animation when going to the previous flashcard
 - [x] Push code to GitHub
 ## Optional
-- [ ] User can delete a flashcard
-- [ ] User can edit existing flashcard
-- [ ] User can store multiple choice questions
+- [ ] User should see a nicer flaschard with rounded corners, shadows, and animating when showing the first time
+- [ ] User should see all views properly layout when using the app on a phone of different sizes
+- [ ] Correct answer in multiple choice should be random
