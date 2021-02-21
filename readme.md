@@ -1,4 +1,4 @@
-### App Description
+### App Description - Lab 4
 A flashcard app for studying!
 
 ### App Walk-though
